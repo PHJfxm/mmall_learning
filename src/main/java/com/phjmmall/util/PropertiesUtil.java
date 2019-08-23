@@ -9,8 +9,11 @@ import java.io.InputStreamReader;
 import java.util.Properties;
 
 /**
- * Created by geely
- */
+ * @program: phjmmall
+ * @description:
+ * @author: Panhuijuan
+ * @create: 2019-08-21 19:25
+ **/
 public class PropertiesUtil {
 
     private static Logger logger = LoggerFactory.getLogger(PropertiesUtil.class);

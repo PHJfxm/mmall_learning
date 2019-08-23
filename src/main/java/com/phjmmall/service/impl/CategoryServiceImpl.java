@@ -7,6 +7,7 @@ import com.phjmmall.dao.CategoryMapper;
 import com.phjmmall.pojo.Category;
 import com.phjmmall.service.ICategoryService;
 import org.apache.commons.lang3.StringUtils;
+import org.omg.CORBA.INTERNAL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,7 +79,7 @@ public class CategoryServiceImpl implements ICategoryService {
     * @Author: Panhuijuan
     * @Date: 2019/8/21 
     */ 
-    public ServerResponse selectCategoryAndChildrenById(Integer categoryId){
+    public ServerResponse<List<Integer>> selectCategoryAndChildrenById(Integer categoryId){
         Set<Category> categorySet = Sets.newHashSet();
         findChildCategory(categorySet, categoryId);
 
